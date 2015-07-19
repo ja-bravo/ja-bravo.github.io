@@ -1,0 +1,27 @@
+header {
+	background-color: #343838;
+	color: white;
+}
+
+html, body {
+	background-color: #6C6E6E !important;
+}
+
+aside {
+	background-color: #008C9E;
+}
+
+.item {
+	margin-left: 10%;
+}
+
+#menu a {
+	text-decoration: none;
+}
+#main {
+	background-color: #00B4CC;
+}
+
+.centered {
+	margin-left: 40%;
+}
