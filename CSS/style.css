@@ -1,27 +1,32 @@
+* {
+	font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+}
+
 header {
-	background-color: #343838;
+	background-color: rgb(41, 41, 41);
 	color: white;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
 }
 
 html, body {
-	background-color: #6C6E6E !important;
+	background-color: rgb(105, 105, 105) !important;
 }
 
-aside {
-	background-color: #008C9E;
-}
-
-.item {
-	margin-left: 10%;
-}
-
-#menu a {
-	text-decoration: none;
-}
 #main {
-	background-color: #00B4CC;
+	background-color: #F2F2F2;
 }
 
-.centered {
-	margin-left: 40%;
+#proyect1 {
+	margin-left: 5%;
+}
+
+#proyectsBar {
+	text-align: center;
+	background-color: rgb(41, 41, 41);
+	color: white;
+}
+
+#aboutMe {
+	font-size: 120%;
 }

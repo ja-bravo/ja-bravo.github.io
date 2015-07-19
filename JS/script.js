@@ -1,22 +1,13 @@
 $(document).ready(function() {
-    $('#menu').accordion({
-    	active: false,
-  		collapsible: true,
+    $('#proyect1').click(function(){
+        window.location.href = "Pathfinder/pathfinder.html";
     });
 
-    $('.proyect').click(function(){
-    	window.location.href = "http://ja-bravo.github.io/Sokoban/";
+    $('#proyect2').click(function(){
+        window.location.href = "http://ja-bravo.github.io/Sokoban/";
     });
 
-    $('.proyect').mouseenter(function(){
-    	$(this).css("background-color","#4CCADB");
+    $('#proyect3').click(function(){
+    	window.location.href = "http://ja-bravo.github.io/League-of-Legends-stats-viewer/";
     });
-
-    $('.proyect').mouseleave(function(){
-    	$(this).css("background-color","#00B4CC");
-    });
-
 });
-
-
-alert(!![]);
