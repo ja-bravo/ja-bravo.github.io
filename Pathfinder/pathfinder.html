@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>A* Algorithm</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="container">
+		<h1 class="title"> A* Algorithm in JavaScript </h1>
+
+		<div id="menu">
+			<div class="rect" id="blocked" onclick="ChangeType('blocked')"><span>Blocked</span></div>
+			<div class="rect" id="start" onclick="ChangeType('start')"><span>Start</span></div>
+			<div class="rect" id="end" onclick="ChangeType('end')"><span>End</span></div>
+		</div>
+		<div id="buttons">
+			<button onclick="GetPath()">Calculate</button>
+			<button onclick="Restart()">Restart</button>	
+		</div>
+		<div style="float: right"> <input type="checkbox" id="allowDiagonal"> Allow diagonal movement. </div>
+
+		<canvas id="canvas" width="800" height="600" ></canvas>
+	</div>
+	
+	<script src="script.js"></script>
+	<script src="pathfinder.js"></script>
+	<script> Init(); </script>
+</body>
+</html>
