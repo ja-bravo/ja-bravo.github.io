@@ -30,3 +30,12 @@ html, body {
 #aboutMe {
 	font-size: 120%;
 }
+
+.skill {
+	text-align: center;
+	border: 1px solid rgb(41, 41, 41);
+	border-radius: 5px;
+	background-color: #E9E9E9;
+	margin-left: 5%;
+	margin-bottom: 1%;
+}
