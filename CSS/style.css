@@ -17,6 +17,10 @@ html, body {
 	background-color: #F2F2F2;
 }
 
+.proyect:hover {
+	background-color: #ABABAB;
+}
+
 #proyect1 {
 	margin-left: 5%;
 }
