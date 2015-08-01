@@ -4,11 +4,12 @@ var path          = [];
 var NORMAL_COST   = 10;
 var DIAGONAL_COST = 14;
 var TOTALCOST     = 0;
+
 function GetNeighbors(cell)
 {
 	var neighbors = [];
 	var allowDiagonal = document.getElementById("allowDiagonal").checked;
-	// UNCOMMENT TO ALLOW DIAGONAL MOVEMENT
+	
 	if (cell.column === 0 && cell.row > 0 && cell.row < gridHeight-1) // Left wall with out top/bottom
 	{
 		neighbors.push(cells[cell.row-1][cell.column]);
@@ -163,21 +164,6 @@ function GetLowestFIndex()
 	{
 		if(openList[i].gCost + openList[i].hCost <
 		   openList[index].gCost + openList[index].hCost && openList[i].type != "blocked")
-		{
-			index = i;
-		}
-	}
-
-	return index;
-}
-
-function GetLowestFIndex()
-{
-	var index = 0;
-	for (var i = 0; i < openList.length; i++)
-	{
-		if(openList[i].gCost + openList[i].hCost <
-		   openList[index].gCost + openList[index].hCost)
 		{
 			index = i;
 		}
