@@ -21,5 +21,6 @@ $(document).ready(function() {
     {
         $(".skill:nth-child(1)").css("margin-left","7%");
         $(".skill:nth-child(4)").css("margin-left","7%");
+        $(".skill:nth-child(7)").css("margin-left","7%");
     }
 });
