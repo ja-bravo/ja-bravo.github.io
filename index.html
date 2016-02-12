@@ -1,112 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Jose Antonio Bravo</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="CSS/style.css"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="JS/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
+    <title>Jose Antonio Bravo Isidro</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- My style -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+
+    <!-- My JS -->
+    <script src="js/app.js"></script>
 </head>
 <body>
-	
-	<header>
-		<div class="container">
-			<h1>Jose Antonio Bravo Isidro</h1>
-			<h4>Studying development of cross-platform applications at I.E.S San Vicente</h4>
-		</div>
-	</header>
 
-	<section id="main" class="container">
-		<div class="row">
-			<article id="aboutMe" class="col-xs-12 col-md-9">
-				<h1> Technologies </h1>
-				<p> I have experience with the following technologies: </p>
-			</article>
-		</div>
+    <header id="web-header">
+        <div class="container">
+            <h1>Jose Antonio Bravo Isidro</h1>
+            <h4>Studying Multi-platform applications development at I.E.S San Vicente</h4>
+        </div>
+    </header>
 
-		<div class="row">
-			<h3 class="col-xs-12" style="text-align: center;"> Desktop/Mobile </h3>
-		</div>
-		
-		<div class="row">
-			<div class="col-xs-4 col-md-3 skill">Android</div>
-			<div class="col-xs-4 col-md-3 skill">Java</div>
-			<div class="col-xs-4 col-md-3 skill">C#</div>
-			<div class="col-xs-4 col-md-3 skill">VB .Net</div>
-			<div class="col-xs-4 col-md-3 skill">SQL</div>
-			<div class="col-xs-4 col-md-3 skill">PL/SQL</div>
-		</div>
+    <main class="container">
+        <section id="about-me" class="container">
+            <header id="about-me-header" class="col-xs-12 headers">
+                <h1> About me </h1>
+            </header>
 
-		<div class="row">
-			<h3 class="col-xs-12" style="text-align: center;"> Web Development </h3>
-		</div>
-		
-		<div class="row">
-			<div class="col-xs-4 col-md-3 skill">JavaScript</div>
-			<div class="col-xs-4 col-md-3 skill">PHP</div>
-			<div class="col-xs-4 col-md-3 skill">AJAX</div>
-			<div class="col-xs-4 col-md-3 skill">HTML5</div>
-			<div class="col-xs-4 col-md-3 skill">CSS3</div>
-			<div class="col-xs-4 col-md-3 skill">XML</div>
-		</div>
+            <section id="about-me-content" class="col-xs12 col-md-8 content">
+                <p> Currently studying development of cross-platform applications at I.E.S San Vicente. <br />
+                    From 2012 to 2014 studied microcomputer systems and networks on the same school.</p>
 
-		<div class="row">
-			<article id="aboutMe" class="col-xs-12 col-md-9">
-				<h1> About me </h1>
-				<p> Currently studying development of cross-platform applications at I.E.S San Vicente. 
-				    From 2012 to 2014 studied microcomputer systems and networks on the same school.</p>
+                <p>On my free time, I enjoy playing around learning technologies,gaming and playing the guitar.</p>
 
-				<p>On my free time, i enjoy playing around with new technologies.</p>
-				<p>I also enjoy gaming and playing the guitar.</p>
-			</article>
-		</div>
-		
-		<div id="proyectsBar" class="row">	
-			<div class="col-xs-12">
-				<h1> Proyects </h1>
-				<p> Click on a proyect to take a look! </p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<section class="row container">
-			<div id="proyect1" class="col-xs-12 col-md-3 proyect">
-				<h1>A* Algorithm</h1>
-				<p> A* algorithm implemented using HTML5 and JavaScript </p>
-			</div>
+                <a href="content/cv.pdf">Click to see my curriculum vitae</a>
+            </section>
+        </section>
 
-			<div class="col-xs-1">
-				
-			</div>
+        <div id="separatorBar" class="row">
+            <div class="col-xs-12">
+                <h1> Projects </h1>
+                <p> Click on a project to take a look! </p>
+            </div>
+        </div>
 
-			<div id="proyect2" class="col-xs-12 col-md-3 proyect">
-				<h1>Sokoban with addons in C#</h1>
-				<p>Sokoban clone using C#, Tao.SDL and free assets</p>
-				<p>Created as a final project for the Computer Programming class at I.E.S San Vicente, Spain.</p>
-			</div>
+        <section id="projects" class="container">
+            <section class="project">
+                <header class="project-header" onclick="window.location = 'https://github.com/ja-bravo/Android-Chat'">
+                    <h1>Android Chat</h1>
+                    <p>Android app capable of one on one and group chatting.<br />
+                        Using Android and Python on the server.
+                        Created as a final project for the Multimedia and Mobile Development class at I.E.S San Vicente, Spain.</p>
+                </header>
+            </section>
 
-			<div class="col-xs-1">
-				
-			</div>
+            <section class="project">
+                <header class="project-header" onclick="window.location = 'https://github.com/ja-bravo/League-of-Legends-stats-viewer'">
+                    <h1>League of Legends statistics viewer</h1>
+                    <p>Web app that using the API provided by Riot Games, displays data about the game. <br />
+                       Built with jQuery, CSS3, HTML5, JavaScript, PHP and AJAX.</p>
+                </header>
+            </section>
 
-			<div id="proyect3" class="col-xs-12 col-md-3 proyect">
-				<h1>League of Legends Stats viewer</h1>
-				<p>Web app that using the API provided by Riot Games, displays data about the game.</p>
-				<p>Built with jQuery, CSS3, HTML5, JavaScript, PHP and AJAX.</p>
-			</div>
+            <section class="project">
+                <header class="project-header" onclick="window.location = 'https://github.com/ja-bravo/Sokoban'">
+                    <h1>Sokoban clone with Add-ons</h1>
+                    <p>Sokoban clone using C#, Tao.SDL and free assets <br />
+                       Created as a final project for the Computer Programming class at I.E.S San Vicente, Spain.</p>
+                </header>
+            </section>
 
-			<div class="col-xs-1">
-				
-		</div>
-	</section>
-		</div>
-	</section>
-	
+            <section class="project">
+                <header class="project-header" onclick="window.location = 'content/Pathfinder/pathfinder.html'">
+                    <h1>A* Algorithm</h1>
+                    <p> A* algorithm implemented using HTML5 and JavaScript </p>
+                </header>
+            </section>
+        </section>
+    </main>
 
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73690364-1', 'auto');
+    ga('send', 'pageview');
+</script>
 </body>
 </html>
+

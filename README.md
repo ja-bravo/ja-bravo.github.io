@@ -1,1 +1,0 @@
-# ja-bravo.github.io

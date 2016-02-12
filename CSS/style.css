@@ -1,45 +1,63 @@
 * {
-	font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+    font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
 }
 
-header {
-	background-color: rgb(41, 41, 41);
-	color: white;
-	padding-top: 1.5%;
-	padding-bottom: 1.5%;
+body {
+    background-color: #656565;
 }
 
-html, body {
-	background-color: rgb(105, 105, 105) !important;
+main {
+    background-color: #F1F0F0;
 }
 
-#main {
-	background-color: #F2F2F2;
+#web-header {
+    background-color: #2A2929;
+    color: #fffefe;
+    padding-bottom: 1%;
+    padding-top: 2%;
+    font-size: 36px;
 }
 
-.proyect:hover {
-	background-color: #ABABAB;
+.headers {
+    padding-left: 0;
 }
 
-#proyect1 {
-	margin-left: 5%;
+.content {
+    padding-left: 1.5%;
+    font-size: 120%;
+    text-align: justify;
+    text-justify: auto;
 }
 
-#proyectsBar {
-	text-align: center;
-	background-color: rgb(41, 41, 41);
-	color: white;
+.tech {
+    text-align: center;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 5px;
+    background-color: #dbdada;
+    margin-left: 3%;
+    margin-bottom: 1%;
 }
 
-#aboutMe {
-	font-size: 120%;
+.tech-header {
+    text-align: center;
+    font-weight: bold;
+    width: 90%;
+    margin: 1% auto;
+    margin-bottom: 2%;
 }
 
-.skill {
-	text-align: center;
-	border: 1px solid rgb(41, 41, 41);
-	border-radius: 5px;
-	background-color: #E9E9E9;
-	margin-left: 5%;
-	margin-bottom: 1%;
+.tech-block {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#separatorBar {
+    margin-top: 2%;
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+.project:hover {
+    background-color: #dbdada;
 }
