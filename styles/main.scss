@@ -20,6 +20,25 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: $darkBlue;
+    align-items: center;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-right: 10px;
+        font-size: 50px;
+    }
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -47,12 +66,16 @@ body {
 .accent {
     color: $mainBlue;
     cursor: pointer;
+    text-decoration:  none;
+
     &:hover, &:focus, &:active {
         color: $text;
     }
 }
 
 .me {
+    margin-top: 50px;
+    
     .container {
         display: block;
 
@@ -65,6 +88,19 @@ body {
 
             @media (max-width: 1600px) { 
                 max-width: 700px;
+            }
+        }
+    }
+
+    .techs {
+        margin-bottom: 10px;
+        .logo {
+            height: 50px;
+            max-width: 205px;
+            margin-right: 25px;
+
+            &:hover {
+                transform: scale(1.2);
             }
         }
     }
@@ -118,6 +154,7 @@ body {
                 border-top: 1px solid #efefef;
             }
 
+            // Laptop
             @media (max-width: 1600px) {
                 width: 31%;
                 & .image {
@@ -129,6 +166,7 @@ body {
                 }
             }
 
+            // Phones
             @media (max-width: 960px) {
                 width: 45%;
                 & .image {
