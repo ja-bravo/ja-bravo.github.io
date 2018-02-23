@@ -1,0 +1,110 @@
+@import "./_colours";
+
+* {
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Work Sans,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: $text;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title {
+    font-size: 4.4rem;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    max-width: 840px;
+    color: $darkBlue;
+}
+
+.subtitle {
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: -.5px;
+    max-width: 840px;
+}
+
+.accent {
+    color: $mainBlue;
+    cursor: pointer;
+    &:hover, &:focus, &:active {
+        color: $text;
+    }
+}
+
+.me {
+    .container {
+        display: block;
+        .me-title {
+            margin-bottom: 0;
+        }
+
+        .me-subtitle {
+            margin-top: 0;
+        }
+    }
+}
+
+.work {
+    background: #fbfbfb;
+
+    .container .title {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    .container.featured {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 5%;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .card {
+            width: 30%;
+            background: white;
+            @include box_shadow(2);
+            border-radius: 4px;
+            margin-bottom: 40px;
+
+            &:hover {
+                @include box_shadow(3);
+                transform: translateY(-5px);
+            }
+
+            .image {
+                height: 500px;
+                width: 100%;
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .name {
+                padding: 15px;
+                font-size: 1.8rem;
+                text-align: center;
+                margin-bottom: 0;
+                color: #4d4d4d;
+                letter-spacing: 0;
+                line-height: 1.2;
+                font-weight: 400;
+            }
+        }
+    }
+}
