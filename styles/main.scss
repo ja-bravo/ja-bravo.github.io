@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+html {
+    @media (max-width: 1600px) {
+        font-size: 12px;
+    }
+}
+
 body {
     font-family: Work Sans,Helvetica,Arial,sans-serif;
     font-weight: 400;
@@ -49,12 +55,17 @@ body {
 .me {
     .container {
         display: block;
+
         .me-title {
             margin-bottom: 0;
         }
 
         .me-subtitle {
             margin-top: 0;
+
+            @media (max-width: 1600px) { 
+                max-width: 700px;
+            }
         }
     }
 }
@@ -77,6 +88,7 @@ body {
 
         .card {
             width: 30%;
+            height: 100%;
             background: white;
             @include box_shadow(2);
             border-radius: 4px;
@@ -100,10 +112,32 @@ body {
                 font-size: 1.8rem;
                 text-align: center;
                 margin-bottom: 0;
-                color: #4d4d4d;
                 letter-spacing: 0;
                 line-height: 1.2;
                 font-weight: 400;
+                border-top: 1px solid #efefef;
+            }
+
+            @media (max-width: 1600px) {
+                width: 31%;
+                & .image {
+                    height: 265px !important;
+                }
+
+                & .name {
+                    font-size: 1.6rem;
+                }
+            }
+
+            @media (max-width: 960px) {
+                width: 45%;
+                & .image {
+                    height: 265px !important;
+                }
+
+                & .name {
+                    font-size: 1.6rem;
+                }
             }
         }
     }
