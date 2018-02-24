@@ -5,6 +5,9 @@
 @media (max-width: 1600px) {
   html {
     font-size: 12px; } }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  html {
+    font-size: 10px; } }
 
 body {
   font-family: Work Sans,Helvetica,Arial,sans-serif;
@@ -37,6 +40,11 @@ nav {
   max-width: 1400px;
   margin-right: auto;
   margin-left: auto; }
+  @media screen and (min-device-width: 1981px) {
+    .container {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 5%; } }
 
 .title {
   font-size: 4.4rem;
@@ -71,12 +79,22 @@ nav {
           max-width: 700px; } }
   .me .techs {
     margin-bottom: 10px; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+      .me .techs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; } }
     .me .techs .logo {
       height: 50px;
       max-width: 205px;
       margin-right: 25px; }
       .me .techs .logo:hover {
         transform: scale(1.2); }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+        .me .techs .logo {
+          height: 30px;
+          margin-bottom: 10px; } }
 
 .work {
   background: #fbfbfb; }
@@ -123,12 +141,36 @@ nav {
             height: 265px !important; }
           .work .container.featured .card .name {
             font-size: 1.6rem; } }
-      @media (max-width: 960px) {
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         .work .container.featured .card {
-          width: 45%; }
+          width: 45%; } }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 712px) {
+        .work .container.featured .card {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto; }
           .work .container.featured .card .image {
             height: 265px !important; }
           .work .container.featured .card .name {
             font-size: 1.6rem; } }
+
+.contact {
+  padding-bottom: 20px; }
+  .contact .container .title {
+    margin-bottom: 0; }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+      .contact .container .title {
+        font-size: 3rem; } }
+  .contact .container .container {
+    display: flex;
+    flex-direction: column; }
+    .contact .container .container .subtitle {
+      margin-top: 0;
+      margin-bottom: 0; }
+    .contact .container .container .details {
+      display: flex;
+      flex-direction: column; }
+      .contact .container .container .details .detail .fas {
+        margin-right: 10px; }
 
 /*# sourceMappingURL=main.css.map */
