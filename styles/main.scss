@@ -6,6 +6,8 @@
 }
 
 html {
+    font-size: 14px;
+
     @media (max-width: 1600px) {
         font-size: 12px;
     }
@@ -59,7 +61,7 @@ nav {
 }
 
 .title {
-    font-size: 4.4rem;
+    font-size: 3.5rem;
     font-weight: 500;
     letter-spacing: -.5px;
     max-width: 840px;
