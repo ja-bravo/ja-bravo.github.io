@@ -84,7 +84,7 @@ nav {
     @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
       .me .techs {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap; } }
     .me .techs .logo {
