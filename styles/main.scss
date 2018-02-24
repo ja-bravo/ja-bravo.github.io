@@ -51,7 +51,7 @@ nav {
     margin-right: auto;
     margin-left: auto;
 
-    @media screen and (min-device-width: 1981px) {
+    @media screen and (min-device-width: 1600px) {
         width: 100%;
         max-width: 100%;
         padding: 0 5%;
@@ -157,7 +157,7 @@ nav {
             }
 
             .image {
-                height: 500px;
+                height: 350px;
                 width: 100%;
                 background-size: 100%;
                 background-position: center;
@@ -166,7 +166,7 @@ nav {
 
             .name {
                 padding: 15px;
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 text-align: center;
                 margin-bottom: 0;
                 letter-spacing: 0;
