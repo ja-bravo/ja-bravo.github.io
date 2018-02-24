@@ -144,7 +144,7 @@ nav {
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         .work .container.featured .card {
           width: 45%; } }
-      @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+      @media only screen and (min-width: 100px) and (max-device-width: 712px) {
         .work .container.featured .card {
           width: 80%;
           margin-left: auto;
