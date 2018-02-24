@@ -81,12 +81,16 @@ nav {
     .me .container .me-title {
       margin-bottom: 0; }
     .me .container .me-subtitle {
-      margin-top: 0; }
+      margin-top: 0;
+      margin-bottom: 0; }
       @media (max-width: 1600px) {
         .me .container .me-subtitle {
           max-width: 700px; } }
+    .me .container .me-cv {
+      margin-top: 0; }
   .me .techs {
-    margin-bottom: 10px; }
+    margin-top: 50px;
+    margin-bottom: 50px; }
     @media only screen and (min-width: 300px) and (max-width: 812px) {
       .me .techs {
         display: flex;
