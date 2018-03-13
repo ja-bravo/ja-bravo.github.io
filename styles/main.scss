@@ -120,6 +120,18 @@ nav {
     .techs {
         margin-top: 50px;
         margin-bottom: 50px;
+        
+        @media only screen and (min-width: 1025px) and (max-width: 1400px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (min-width: 813px) and (max-width: 1024px) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
 
         @media only screen and (min-width: 300px) and (max-width: 812px) {
             display: flex;
@@ -133,6 +145,9 @@ nav {
             max-width: 205px;
             margin-right: 25px;
 
+            &.big {
+                height: 60px;
+            }
             &:hover {
                 transform: scale(1.2);
             }
@@ -149,7 +164,7 @@ nav {
     background: #fbfbfb;
 
     .container .title {
-        margin-bottom: 0;
+        margin-bottom: 5px;
         margin-top: 10px;
     }
     .container.featured {
